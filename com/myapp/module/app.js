@@ -1,6 +1,7 @@
 (function(){
 	angular.module("app",["ngRoute"])
-	.config(function($routeProvider){
+	.config(function($routeProvider,constantrecipe){
+		alert(constantrecipe.message);
 		$routeProvider
 		.when("/",{
 			controller : "herocontroller",
